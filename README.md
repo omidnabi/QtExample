@@ -64,4 +64,3 @@
     <p>This project illustrates a fundamental structure for a Qt6 application and library, showcasing how to organize, build, and link them using CMake. The key takeaway is the importance of CMake in managing project dependencies, compilation, and linking processes, facilitating modular and reusable code development practices in C++ and QML with Qt6. Through detailed CMake configurations and careful project structure, developers can efficiently create scalable and maintainable Qt applications and libraries.</p>
 </body>
 </html>
-
