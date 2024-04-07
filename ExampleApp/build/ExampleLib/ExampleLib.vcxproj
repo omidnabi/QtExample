@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9D4F900C-80A3-3999-97B2-2FED1D815909}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ExampleLib</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ExampleLib.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ExampleLib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExampleLib.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExampleLib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ExampleLib.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ExampleLib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ExampleLib.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ExampleLib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\include_Debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtCore" /external:I "C:/Qt/6.7.0/msvc2019_64/include" /external:I "C:/Qt/6.7.0/msvc2019_64/mkspecs/win32-msvc" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtQml" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtQmlIntegration" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtQmlBuiltins" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtNetwork" -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BUILDING_EXAMPLELIB=1;QT_CORE_LIB;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_QML_LIB;QT_QMLINTEGRATION_LIB;QT_QMLBUILTINS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="Debug";ExampleLib_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BUILDING_EXAMPLELIB=1;QT_CORE_LIB;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_QML_LIB;QT_QMLINTEGRATION_LIB;QT_QMLBUILTINS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"Debug\";ExampleLib_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\include_Debug;C:\Qt\6.7.0\msvc2019_64\include\QtCore;C:\Qt\6.7.0\msvc2019_64\include;C:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc;C:\Qt\6.7.0\msvc2019_64\include\QtQml;C:\Qt\6.7.0\msvc2019_64\include\QtQmlIntegration;C:\Qt\6.7.0\msvc2019_64\include\QtQmlBuiltins;C:\Qt\6.7.0\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\include_Debug;C:\Qt\6.7.0\msvc2019_64\include\QtCore;C:\Qt\6.7.0\msvc2019_64\include;C:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc;C:\Qt\6.7.0\msvc2019_64\include\QtQml;C:\Qt\6.7.0\msvc2019_64\include\QtQmlIntegration;C:\Qt\6.7.0\msvc2019_64\include\QtQmlBuiltins;C:\Qt\6.7.0\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC for target ExampleLib</Message>
+      <Command>setlocal
+cd C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/CMakeFiles/ExampleLib_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Qt\6.7.0\msvc2019_64\lib\Qt6Qmld.lib;C:\Qt\6.7.0\msvc2019_64\lib\Qt6QmlBuiltinsd.lib;C:\Qt\6.7.0\msvc2019_64\lib\Qt6Networkd.lib;C:\Qt\6.7.0\msvc2019_64\lib\Qt6Cored.lib;mpr.lib;userenv.lib;ws2_32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/Debug/ExampleLib.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/Debug/ExampleLib.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\include_Release;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtCore" /external:I "C:/Qt/6.7.0/msvc2019_64/include" /external:I "C:/Qt/6.7.0/msvc2019_64/mkspecs/win32-msvc" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtQml" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtQmlIntegration" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtQmlBuiltins" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtNetwork" -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_EXAMPLELIB=1;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_QML_LIB;QT_QMLINTEGRATION_LIB;QT_QMLBUILTINS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="Release";ExampleLib_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_EXAMPLELIB=1;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_QML_LIB;QT_QMLINTEGRATION_LIB;QT_QMLBUILTINS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"Release\";ExampleLib_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\include_Release;C:\Qt\6.7.0\msvc2019_64\include\QtCore;C:\Qt\6.7.0\msvc2019_64\include;C:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc;C:\Qt\6.7.0\msvc2019_64\include\QtQml;C:\Qt\6.7.0\msvc2019_64\include\QtQmlIntegration;C:\Qt\6.7.0\msvc2019_64\include\QtQmlBuiltins;C:\Qt\6.7.0\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\include_Release;C:\Qt\6.7.0\msvc2019_64\include\QtCore;C:\Qt\6.7.0\msvc2019_64\include;C:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc;C:\Qt\6.7.0\msvc2019_64\include\QtQml;C:\Qt\6.7.0\msvc2019_64\include\QtQmlIntegration;C:\Qt\6.7.0\msvc2019_64\include\QtQmlBuiltins;C:\Qt\6.7.0\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC for target ExampleLib</Message>
+      <Command>setlocal
+cd C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/CMakeFiles/ExampleLib_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Qt\6.7.0\msvc2019_64\lib\Qt6Qml.lib;C:\Qt\6.7.0\msvc2019_64\lib\Qt6QmlBuiltins.lib;C:\Qt\6.7.0\msvc2019_64\lib\Qt6Network.lib;C:\Qt\6.7.0\msvc2019_64\lib\Qt6Core.lib;mpr.lib;userenv.lib;ws2_32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/Release/ExampleLib.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/Release/ExampleLib.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\include_MinSizeRel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtCore" /external:I "C:/Qt/6.7.0/msvc2019_64/include" /external:I "C:/Qt/6.7.0/msvc2019_64/mkspecs/win32-msvc" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtQml" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtQmlIntegration" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtQmlBuiltins" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtNetwork" -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_EXAMPLELIB=1;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_QML_LIB;QT_QMLINTEGRATION_LIB;QT_QMLBUILTINS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="MinSizeRel";ExampleLib_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_EXAMPLELIB=1;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_QML_LIB;QT_QMLINTEGRATION_LIB;QT_QMLBUILTINS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"MinSizeRel\";ExampleLib_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\include_MinSizeRel;C:\Qt\6.7.0\msvc2019_64\include\QtCore;C:\Qt\6.7.0\msvc2019_64\include;C:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc;C:\Qt\6.7.0\msvc2019_64\include\QtQml;C:\Qt\6.7.0\msvc2019_64\include\QtQmlIntegration;C:\Qt\6.7.0\msvc2019_64\include\QtQmlBuiltins;C:\Qt\6.7.0\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\include_MinSizeRel;C:\Qt\6.7.0\msvc2019_64\include\QtCore;C:\Qt\6.7.0\msvc2019_64\include;C:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc;C:\Qt\6.7.0\msvc2019_64\include\QtQml;C:\Qt\6.7.0\msvc2019_64\include\QtQmlIntegration;C:\Qt\6.7.0\msvc2019_64\include\QtQmlBuiltins;C:\Qt\6.7.0\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC for target ExampleLib</Message>
+      <Command>setlocal
+cd C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/CMakeFiles/ExampleLib_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Qt\6.7.0\msvc2019_64\lib\Qt6Qml.lib;C:\Qt\6.7.0\msvc2019_64\lib\Qt6QmlBuiltins.lib;C:\Qt\6.7.0\msvc2019_64\lib\Qt6Network.lib;C:\Qt\6.7.0\msvc2019_64\lib\Qt6Core.lib;mpr.lib;userenv.lib;ws2_32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/MinSizeRel/ExampleLib.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/MinSizeRel/ExampleLib.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\include_RelWithDebInfo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtCore" /external:I "C:/Qt/6.7.0/msvc2019_64/include" /external:I "C:/Qt/6.7.0/msvc2019_64/mkspecs/win32-msvc" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtQml" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtQmlIntegration" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtQmlBuiltins" /external:I "C:/Qt/6.7.0/msvc2019_64/include/QtNetwork" -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_EXAMPLELIB=1;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_QML_LIB;QT_QMLINTEGRATION_LIB;QT_QMLBUILTINS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="RelWithDebInfo";ExampleLib_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_EXAMPLELIB=1;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_QML_LIB;QT_QMLINTEGRATION_LIB;QT_QMLBUILTINS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";ExampleLib_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\include_RelWithDebInfo;C:\Qt\6.7.0\msvc2019_64\include\QtCore;C:\Qt\6.7.0\msvc2019_64\include;C:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc;C:\Qt\6.7.0\msvc2019_64\include\QtQml;C:\Qt\6.7.0\msvc2019_64\include\QtQmlIntegration;C:\Qt\6.7.0\msvc2019_64\include\QtQmlBuiltins;C:\Qt\6.7.0\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleLib;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\include_RelWithDebInfo;C:\Qt\6.7.0\msvc2019_64\include\QtCore;C:\Qt\6.7.0\msvc2019_64\include;C:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc;C:\Qt\6.7.0\msvc2019_64\include\QtQml;C:\Qt\6.7.0\msvc2019_64\include\QtQmlIntegration;C:\Qt\6.7.0\msvc2019_64\include\QtQmlBuiltins;C:\Qt\6.7.0\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC for target ExampleLib</Message>
+      <Command>setlocal
+cd C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/CMakeFiles/ExampleLib_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Qt\6.7.0\msvc2019_64\lib\Qt6Qml.lib;C:\Qt\6.7.0\msvc2019_64\lib\Qt6QmlBuiltins.lib;C:\Qt\6.7.0\msvc2019_64\lib\Qt6Network.lib;C:\Qt\6.7.0\msvc2019_64\lib\Qt6Core.lib;mpr.lib;userenv.lib;ws2_32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/RelWithDebInfo/ExampleLib.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/RelWithDebInfo/ExampleLib.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hilar\Documents\QtExample\ExampleApp\build\CMakeFiles\7a92fe553e8177a615a539acc58ae980\qrc_examplelib.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running rcc for resource examplelib</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\6.7.0\msvc2019_64\.\bin\rcc.exe --output C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/.rcc/qrc_examplelib.cpp --name examplelib C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/.rcc/examplelib.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hilar\Documents\QtExample\ExampleLib\ExampleRect.qml;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\.rcc\examplelib.qrc;C:\Qt\6.7.0\msvc2019_64\.\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\.rcc\qrc_examplelib.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running rcc for resource examplelib</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\6.7.0\msvc2019_64\.\bin\rcc.exe --output C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/.rcc/qrc_examplelib.cpp --name examplelib C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/.rcc/examplelib.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hilar\Documents\QtExample\ExampleLib\ExampleRect.qml;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\.rcc\examplelib.qrc;C:\Qt\6.7.0\msvc2019_64\.\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\.rcc\qrc_examplelib.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running rcc for resource examplelib</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\6.7.0\msvc2019_64\.\bin\rcc.exe --output C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/.rcc/qrc_examplelib.cpp --name examplelib C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/.rcc/examplelib.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hilar\Documents\QtExample\ExampleLib\ExampleRect.qml;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\.rcc\examplelib.qrc;C:\Qt\6.7.0\msvc2019_64\.\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\.rcc\qrc_examplelib.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running rcc for resource examplelib</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\6.7.0\msvc2019_64\.\bin\rcc.exe --output C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/.rcc/qrc_examplelib.cpp --name examplelib C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/.rcc/examplelib.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hilar\Documents\QtExample\ExampleLib\ExampleRect.qml;C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\.rcc\examplelib.qrc;C:\Qt\6.7.0\msvc2019_64\.\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\.rcc\qrc_examplelib.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hilar\Documents\QtExample\ExampleLib\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/hilar/Documents/QtExample/ExampleLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hilar/Documents/QtExample/ExampleApp -BC:/Users/hilar/Documents/QtExample/ExampleApp/build --check-stamp-file C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6Config.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6ConfigExtras.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersion.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersionImpl.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6Dependencies.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6Targets.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6VersionlessTargets.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtFeature.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtFeatureCommon.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicAppleHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicCMakeHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicCMakeVersionHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicDependencyHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicExternalProjectHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicFinalizerHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicFindPackageHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicPluginHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicTargetHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicTestHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicToolHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicWalkLibsHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigureFileTemplate.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/hilar/Documents/QtExample/ExampleLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hilar/Documents/QtExample/ExampleApp -BC:/Users/hilar/Documents/QtExample/ExampleApp/build --check-stamp-file C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6Config.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6ConfigExtras.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersion.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersionImpl.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6Dependencies.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6Targets.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6VersionlessTargets.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtFeature.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtFeatureCommon.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicAppleHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicCMakeHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicCMakeVersionHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicDependencyHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicExternalProjectHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicFinalizerHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicFindPackageHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicPluginHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicTargetHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicTestHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicToolHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicWalkLibsHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigureFileTemplate.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/hilar/Documents/QtExample/ExampleLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hilar/Documents/QtExample/ExampleApp -BC:/Users/hilar/Documents/QtExample/ExampleApp/build --check-stamp-file C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6Config.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6ConfigExtras.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersion.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersionImpl.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6Dependencies.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6Targets.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6VersionlessTargets.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtFeature.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtFeatureCommon.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicAppleHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicCMakeHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicCMakeVersionHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicDependencyHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicExternalProjectHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicFinalizerHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicFindPackageHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicPluginHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicTargetHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicTestHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicToolHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicWalkLibsHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigureFileTemplate.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/hilar/Documents/QtExample/ExampleLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hilar/Documents/QtExample/ExampleApp -BC:/Users/hilar/Documents/QtExample/ExampleApp/build --check-stamp-file C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6Config.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6ConfigExtras.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersion.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersionImpl.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6Dependencies.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6Targets.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\Qt6VersionlessTargets.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtFeature.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtFeatureCommon.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicAppleHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicCMakeHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicCMakeVersionHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicDependencyHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicExternalProjectHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicFinalizerHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicFindPackageHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicPluginHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicTargetHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicTestHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicToolHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6\QtPublicWalkLibsHelpers.cmake;C:\Qt\6.7.0\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigureFileTemplate.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hilar\Documents\QtExample\ExampleLib\ExampleLibClass.cpp" />
+    <ClInclude Include="C:\Users\hilar\Documents\QtExample\ExampleLib\ExampleLibClass.h" />
+    <ClCompile Include="C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\.rcc\qrc_examplelib.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\hilar\Documents\QtExample\ExampleApp\build\ZERO_CHECK.vcxproj">
+      <Project>{0117F39A-D506-32F9-B613-99D0E5EA4220}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

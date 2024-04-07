@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hilar\Documents\QtExample\ExampleLib\ExampleLibClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\.rcc\qrc_examplelib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hilar\Documents\QtExample\ExampleApp\build\ExampleLib\ExampleLib_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\hilar\Documents\QtExample\ExampleLib\ExampleLibClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hilar\Documents\QtExample\ExampleApp\build\CMakeFiles\7a92fe553e8177a615a539acc58ae980\qrc_examplelib.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\hilar\Documents\QtExample\ExampleLib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2AAB43EB-3EB3-39D8-8233-66C69B19CEF8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6975D543-2A8C-3D2D-B284-A43E07F1B9AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2299B1C3-1867-3D34-9946-6D3A2E77A3E1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

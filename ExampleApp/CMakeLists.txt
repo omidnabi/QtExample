@@ -25,6 +25,6 @@ target_include_directories(ExampleApp PRIVATE ${CMAKE_SOURCE_DIR}/../ExampleLib)
 
 # Add a custom command to run windeployqt after building ExampleApp
 add_custom_command(TARGET ExampleApp POST_BUILD
-    COMMAND C:\\Qt\\6.5.2\\msvc2019_64\\bin\\windeployqt6.exe $<TARGET_FILE_DIR:ExampleApp>\\$<TARGET_FILE_NAME:ExampleApp>
+    COMMAND C:\\Qt\\6.7.0\\msvc2019_64\\bin\\windeployqt6.exe $<TARGET_FILE_DIR:ExampleApp>\\$<TARGET_FILE_NAME:ExampleApp>
 )
 

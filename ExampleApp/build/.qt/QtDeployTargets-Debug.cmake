@@ -1,0 +1,4 @@
+set(__QT_DEPLOY_TARGET_ExampleLib_FILE C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/Debug/ExampleLib.dll)
+set(__QT_DEPLOY_TARGET_ExampleLib_RUNTIME_DLLS C:/Qt/6.7.0/msvc2019_64/bin/Qt6Qmld.dll;C:/Qt/6.7.0/msvc2019_64/bin/Qt6Networkd.dll;C:/Qt/6.7.0/msvc2019_64/bin/Qt6Cored.dll)
+set(__QT_DEPLOY_TARGET_ExampleApp_FILE C:/Users/hilar/Documents/QtExample/ExampleApp/build/Debug/ExampleApp.exe)
+set(__QT_DEPLOY_TARGET_ExampleApp_RUNTIME_DLLS C:/Qt/6.7.0/msvc2019_64/bin/Qt6Quickd.dll;C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/Debug/ExampleLib.dll;C:/Qt/6.7.0/msvc2019_64/bin/Qt6QmlModelsd.dll;C:/Qt/6.7.0/msvc2019_64/bin/Qt6OpenGLd.dll;C:/Qt/6.7.0/msvc2019_64/bin/Qt6Guid.dll;C:/Qt/6.7.0/msvc2019_64/bin/Qt6Qmld.dll;C:/Qt/6.7.0/msvc2019_64/bin/Qt6Networkd.dll;C:/Qt/6.7.0/msvc2019_64/bin/Qt6Cored.dll)

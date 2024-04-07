@@ -1,0 +1,20 @@
+^C:\USERS\HILAR\DOCUMENTS\QTEXAMPLE\EXAMPLEAPP\BUILD\CMAKEFILES\7A92FE553E8177A615A539ACC58AE980\QRC_EXAMPLELIB.CPP.RULE
+setlocal
+C:\Qt\6.7.0\msvc2019_64\.\bin\rcc.exe --output C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/.rcc/qrc_examplelib.cpp --name examplelib C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/.rcc/examplelib.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HILAR\DOCUMENTS\QTEXAMPLE\EXAMPLELIB\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hilar/Documents/QtExample/ExampleApp -BC:/Users/hilar/Documents/QtExample/ExampleApp/build --check-stamp-file C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleLib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

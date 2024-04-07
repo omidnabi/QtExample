@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="ExampleRect.qml">C:/Users/hilar/Documents/QtExample/ExampleLib/ExampleRect.qml</file>
+  </qresource>
+</RCC>
+

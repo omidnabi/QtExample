@@ -1,0 +1,10 @@
+^C:\USERS\HILAR\DOCUMENTS\QTEXAMPLE\EXAMPLEAPP\BUILD\CMAKEFILES\618E4063DE673AC7F8E3DEA62C5616D0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hilar/Documents/QtExample/ExampleApp -BC:/Users/hilar/Documents/QtExample/ExampleApp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/hilar/Documents/QtExample/ExampleApp/build/ExampleApp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
