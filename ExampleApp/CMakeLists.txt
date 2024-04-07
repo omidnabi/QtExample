@@ -8,19 +8,23 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-# Assuming ExampleLib is at the same directory level as ExampleApp
-add_subdirectory(../ExampleLib ${CMAKE_BINARY_DIR}/build)
+# Add the subdirectory for ExampleLib
+add_subdirectory(${CMAKE_SOURCE_DIR}/../ExampleLib ${CMAKE_BINARY_DIR}/ExampleLib)
 
 add_executable(ExampleApp
     main.cpp
     qml.qrc
 )
 
-# Link against the ExampleLib. This should also automatically add its include directories.
+# Link against the ExampleLib and Qt libraries
 target_link_libraries(ExampleApp Qt6::Core Qt6::Quick ExampleLib)
 
-# If for some reason the include directories are not properly added, manually add them.
-# This is only necessary if the automatic inclusion through target_link_libraries doesn't work.
-# Adjust the path as necessary.
-include_directories(../ExampleLib)
+# Assuming ExampleLib's include files are directly under ExampleLib/
+# This will correctly add the path to the target
+target_include_directories(ExampleApp PRIVATE ${CMAKE_SOURCE_DIR}/../ExampleLib)
+
+# Add a custom command to run windeployqt after building ExampleApp
+add_custom_command(TARGET ExampleApp POST_BUILD
+    COMMAND C:\\Qt\\6.5.2\\msvc2019_64\\bin\\windeployqt6.exe $<TARGET_FILE_DIR:ExampleApp>\\$<TARGET_FILE_NAME:ExampleApp>
+)
 

@@ -13,6 +13,8 @@ add_library(ExampleLib SHARED
 )
 
 target_link_libraries(ExampleLib Qt6::Core Qt6::Qml)
+target_compile_definitions(ExampleLib PRIVATE BUILDING_EXAMPLELIB=1)
+
 
 qt6_add_resources(ExampleLib "examplelib"
     PREFIX "/"

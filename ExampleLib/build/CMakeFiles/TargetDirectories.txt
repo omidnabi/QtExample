@@ -1,5 +1,0 @@
-/home/omidnabi/Working/QtExample/ExampleLib/build/CMakeFiles/ExampleLib.dir
-/home/omidnabi/Working/QtExample/ExampleLib/build/CMakeFiles/ExampleLib_other_files.dir
-/home/omidnabi/Working/QtExample/ExampleLib/build/CMakeFiles/edit_cache.dir
-/home/omidnabi/Working/QtExample/ExampleLib/build/CMakeFiles/rebuild_cache.dir
-/home/omidnabi/Working/QtExample/ExampleLib/build/CMakeFiles/ExampleLib_autogen.dir
